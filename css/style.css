@@ -4,14 +4,19 @@
 */
 
 :root {
-    /* Color Palette (Neutral Base) */
+    /* Base Colors (Dark Theme Default) */
+    --sys-blue: #0A84FF;
+    --sys-orange: #FF9F0A;
+    --sys-green: #30D158;
+    --sys-yellow: #FFD60A;
+    --sys-red: #FF453A;
+    
     --bg-main: #0a0a0c;
     --bg-glass: rgba(255, 255, 255, 0.05);
     --bg-glass-heavy: rgba(255, 255, 255, 0.08);
     --text-primary: #f5f5f7;
     --text-secondary: #86868b;
-    --accent: #0071e3; /* Classic Apple Blue as neutral primary holder */
-    --accent-glow: rgba(0, 113, 227, 0.3);
+    --border-color: rgba(255, 255, 255, 0.1);
     
     /* Typography */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -23,6 +28,23 @@
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --sys-blue: #007AFF;
+        --sys-orange: #FF9500;
+        --sys-green: #34C759;
+        --sys-yellow: #FFCC00;
+        --sys-red: #FF3B30;
+
+        --bg-main: #f5f5f7;
+        --bg-glass: rgba(0, 0, 0, 0.05);
+        --bg-glass-heavy: rgba(0, 0, 0, 0.08);
+        --text-primary: #1d1d1f;
+        --text-secondary: #86868b;
+        --border-color: rgba(0, 0, 0, 0.1);
+    }
 }
 
 * {
@@ -45,7 +67,7 @@ body {
     background: var(--bg-glass);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
 }
 
@@ -223,22 +245,70 @@ footer {
     padding: 30px;
 }
 
-/* App Store Badge Placeholder */
-.badge-placeholder {
-    display: inline-flex;
+/* Language Selector */
+.lang-selector {
+    display: flex;
+    gap: 15px;
     align-items: center;
-    background: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid #333;
-    font-weight: 600;
 }
 
-/* Responsive */
+.lang-selector a {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: var(--transition-smooth);
+}
+
+.lang-selector a.active {
+    color: var(--text-primary);
+    background: var(--bg-glass-heavy);
+}
+
+.lang-selector a:hover {
+    color: var(--text-primary);
+}
+
+/* Feature Showcases */
+.feature-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.feature-showcase.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.feature-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px; /* To match app store curved corners */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+}
+
 @media (max-width: 768px) {
     .nav-links { display: none; }
-    .hero { padding-top: 100px; }
-    .container { padding: 0 20px; }
-    .footer-content { flex-direction: column; gap: 20px; text-align: center; }
+    .feature-showcase, .feature-showcase.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        margin-top: 60px;
+    }
 }
