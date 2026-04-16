@@ -3,58 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Hybrid Tracker</title>
+    <title>Privacy Policy — Hybrid Tracker</title>
+    <meta name="description" content="Hybrid Tracker Privacy Policy. Your data stays on your device and your iCloud account. We do not collect personal information.">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .privacy-content {
-            padding-top: 150px;
-            max-width: 800px;
-        }
-        .privacy-content p {
-            margin-bottom: 20px;
-            color: var(--text-secondary);
-        }
-        .privacy-content h2 {
-            margin-top: 40px;
-        }
-    </style>
 </head>
 <body>
-    <header class="glass" id="main-header">
-        <nav class="container nav-bar">
-            <div class="logo">
-                <a href="index.html">
-                    <span class="logo-icon">🚗</span>
-                    <span class="logo-text">Hybrid Tracker</span>
-                </a>
-            </div>
+
+    <nav class="nav scrolled" id="main-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Hybrid Tracker</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="container privacy-content">
+    <main class="privacy-page">
         <h1>Privacy Policy</h1>
-        <p>Last updated: April 16, 2026</p>
-        
-        <h2>1. Introduction</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="updated">Last updated: April 16, 2026</p>
 
-        <h2>2. Data Collection</h2>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="privacy-intro">
+            <strong>Privacy first.</strong> Hybrid Tracker is designed with your privacy as a priority. We do not collect, store, or share any personal data on our servers. All information you enter in the app stays on your device and your personal iCloud account.
+        </div>
 
-        <h2>3. Use of Information</h2>
-        <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+        <h2>1. Overview</h2>
+        <p>Hybrid Tracker is a vehicle management app that helps users track fuel consumption, charging sessions, costs, and efficiency for Gas, Electric, and Hybrid vehicles. The app is built with Apple's SwiftData framework and uses iCloud for syncing data across your devices.</p>
+        <p>This Privacy Policy explains what data the app accesses, how it is used, and your rights regarding that data.</p>
 
-        <h2>4. Data Protection</h2>
-        <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.</p>
+        <h2>2. Data We Do NOT Collect</h2>
+        <p>Hybrid Tracker does not:</p>
+        <ul>
+            <li>Collect personal identification information (name, email, phone number)</li>
+            <li>Use analytics or tracking SDKs</li>
+            <li>Send your data to any third-party server</li>
+            <li>Use cookies or web tracking technologies</li>
+            <li>Display advertisements</li>
+            <li>Share or sell your data to anyone</li>
+        </ul>
+
+        <h2>3. Data Stored on Your Device</h2>
+        <p>The app stores the following information locally on your device and in your personal iCloud account (if iCloud is enabled):</p>
+        <ul>
+            <li><strong>Vehicle information:</strong> brand, model, license plate, color, vehicle category (car/motorcycle), and energy type (gas/electric/hybrid)</li>
+            <li><strong>Refueling and charging records:</strong> date, quantity (litres or kWh), odometer reading, total cost, gas type (regular/mid/premium), and optional notes</li>
+            <li><strong>Receipt photos:</strong> images captured by the camera are stored locally on the device</li>
+            <li><strong>Saved locations:</strong> name, latitude, and longitude of refueling or charging stations</li>
+            <li><strong>User preferences:</strong> fuel unit, distance unit, currency, and display settings</li>
+        </ul>
+        <p>This data is stored using Apple's SwiftData framework and is synced via iCloud when enabled. Apple manages the iCloud infrastructure, and your data is protected by Apple's privacy and security policies.</p>
+
+        <h2>4. Camera Access</h2>
+        <p>The app requests camera permission solely to allow you to photograph receipts and attach them to refueling or charging records. Photos are stored locally on the device as part of the record data. No images are uploaded to any server.</p>
+
+        <h2>5. Location Access</h2>
+        <p>The app may request "When In Use" location permission to help you save the location of refueling or charging stations. Location data is stored only when you explicitly choose to save a location to a record. The app does not track your location in the background.</p>
+        <p>Location saving is a Pro feature. If you do not subscribe to Pro, the app does not request location permission.</p>
+
+        <h2>6. In-App Purchases</h2>
+        <p>Hybrid Tracker offers optional Pro subscriptions (monthly and yearly) through Apple's App Store. All payment processing is handled entirely by Apple. We do not have access to your payment information, Apple ID, or transaction details.</p>
+
+        <h2>7. Third-Party Services</h2>
+        <p>The app uses the following third-party services:</p>
+        <ul>
+            <li><strong>Apple iCloud:</strong> for syncing your vehicle and record data across your devices. Governed by <a href="https://www.apple.com/legal/privacy/" style="color: var(--sys-blue);">Apple's Privacy Policy</a>.</li>
+            <li><strong>Apple StoreKit:</strong> for managing in-app subscription purchases. Governed by Apple's terms.</li>
+            <li><strong>Apple Maps, Google Maps, and Waze:</strong> the app can open these mapping services for directions to saved locations. No data is shared with these services; only the coordinates you choose to navigate to are passed.</li>
+        </ul>
+
+        <h2>8. Data Security</h2>
+        <p>All data is stored locally or in your iCloud account, which is encrypted by Apple. The app does not transmit data over the internet to any server other than iCloud. We follow Apple's security best practices to ensure the integrity of the app.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Hybrid Tracker is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
+
+        <h2>10. Your Rights</h2>
+        <p>Since all data is stored on your device and your iCloud account, you have full control over it at all times. You can:</p>
+        <ul>
+            <li>View, edit, or delete any vehicle or record within the app</li>
+            <li>Delete all app data by uninstalling the app</li>
+            <li>Manage iCloud data through your device's Settings &gt; iCloud</li>
+            <li>Revoke camera or location permissions at any time in Settings</li>
+        </ul>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy occasionally. Any changes will be published on this page with a revised date. We recommend reviewing this policy periodically.</p>
+
+        <h2>12. Contact</h2>
+        <p>If you have any questions about this Privacy Policy or the app, you can reach us through the app's support channels or by opening an issue on our GitHub repository.</p>
     </main>
 
-    <footer class="glass">
-        <div class="container footer-content">
-            <p>&copy; 2026 Hybrid Tracker. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; 2026 Hybrid Tracker. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+            </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

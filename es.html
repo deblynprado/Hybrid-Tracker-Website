@@ -3,120 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hybrid Tracker | Optimize Your Hybrid Performance</title>
-    <meta name="description" content="The ultimate tracking tool for hybrid vehicle owners. Monitor fuel efficiency, battery health, and driving patterns in one sleek app.">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
+    <title>Hybrid Tracker — Controla cada kilómetro y recarga</title>
+    <meta name="description" content="La forma más inteligente de controlar combustible, recarga y costos de vehículos a Gasolina, Eléctricos e Híbridos. Disponible para iPhone.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="glass" id="main-header">
-        <nav class="container nav-bar">
-            <div class="logo">
-                <span class="logo-icon">🚗</span>
-                <span class="logo-text">Hybrid Tracker</span>
-            </div>
-            
-            <div class="lang-selector">
-                <a href="index.html">EN</a>
-                <a href="pt-br.html">PT-BR</a>
-                <a href="es.html" class="active">ES</a>
-            </div>
 
+    <nav class="nav" id="main-nav">
+        <div class="nav-inner">
+            <a href="es.html" class="nav-logo">Hybrid Tracker</a>
             <ul class="nav-links">
                 <li><a href="#features">Características</a></li>
-                <li><a href="privacy.html">Política de Privacidad</a></li>
+                <li><a href="privacy.html">Privacidad</a></li>
+                <li>
+                    <div class="lang-switch">
+                        <a href="index.html">EN</a>
+                        <a href="pt-br.html">PT</a>
+                        <a href="es.html" class="active">ES</a>
+                    </div>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="container hero-content">
-                <div class="feature-image-wrapper">
-                    <img src="app-store-screenshots/es/01-es-6.9.png" alt="Mockup de Hybrid Tracker" style="max-height: 80vh;">
-                </div>
-                
-                <div class="cta-group" style="margin-top: 40px;">
-                    <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-es?size=250x83&amp;releaseDate=123" alt="Consíguelo en el App Store" style="height: 50px;">
-                    </a>
-                </div>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="hero-badge reveal"><span></span> Disponible en la App Store</div>
+        <h1 class="reveal">Controla cada km<br>y cada <span class="gradient">recarga.</span></h1>
+        <p class="hero-sub reveal">La forma más inteligente de gestionar combustible, recarga y costos de tus vehículos a Gasolina, Eléctricos e Híbridos — todo en un solo lugar.</p>
+        <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="hero-cta reveal">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-mx?size=250x83" alt="Consíguelo en el App Store">
+        </a>
+        <div class="hero-screenshot reveal">
+            <img src="app-store-screenshots/es/01-es-6.9.png" alt="Hybrid Tracker — Pantalla Mis Vehículos">
+        </div>
+    </section>
 
-        <!-- Features Showcase -->
-        <section id="features" class="container">
-            <div class="feature-showcase">
-                <div class="feature-text">
-                    <h2 style="color: var(--sys-blue);">Panel Intuitivo</h2>
-                    <p>Realice un seguimiento del rendimiento de su híbrido con un panel claro y enfocado. Comprenda sus hábitos de conducción y optimice para lograr la máxima eficiencia sin esfuerzo.</p>
-                </div>
-                <div class="feature-image-wrapper">
-                    <img src="app-store-screenshots/es/02-es-6.9.png" alt="Característica de Panel">
-                </div>
-            </div>
+    <div class="divider"></div>
 
-            <div class="feature-showcase reverse">
-                <div class="feature-text">
-                    <h2 style="color: var(--sys-green);">Informes Detallados</h2>
-                    <p>Profundice en los datos de su vehículo. Identifique tendencias y tome decisiones informadas sobre su estrategia de conducción híbrida.</p>
-                </div>
-                <div class="feature-image-wrapper">
-                    <img src="app-store-screenshots/es/03-es-6.9.png" alt="Característica de Informes">
-                </div>
-            </div>
+    <div class="feature-row reveal" id="features">
+        <div class="feature-text">
+            <p class="section-label" style="color: var(--sys-orange);">Repostajes</p>
+            <h2 class="section-title">Registra repostajes<br>en segundos.</h2>
+            <p class="section-desc">Registra paradas de combustible o sesiones de recarga con pocos toques. Controla cantidad, costo, odómetro, tipo de combustible e incluso toma una foto del recibo.</p>
+        </div>
+        <div class="feature-media">
+            <img src="app-store-screenshots/es/02-es-6.9.png" alt="Panel del vehículo con registros y consumo promedio">
+        </div>
+    </div>
 
-            <div class="feature-showcase">
-                <div class="feature-text">
-                    <h2 style="color: var(--sys-orange);">Registros de Repostaje</h2>
-                    <p>Mantenga un historial detallado de sus repostajes. Realice un seguimiento de los costos y asegúrese de que su batería y motor estén funcionando en perfecta armonía.</p>
-                </div>
-                <div class="feature-image-wrapper">
-                    <img src="app-store-screenshots/es/04-es-6.9.png" alt="Característica de Repostaje">
-                </div>
-            </div>
+    <div class="feature-row reverse reveal">
+        <div class="feature-text">
+            <p class="section-label" style="color: var(--sys-blue);">Costos</p>
+            <h2 class="section-title">Mira a dónde<br>va tu dinero.</h2>
+            <p class="section-desc">Obtén un panel instantáneo de cada vehículo — gasto total, consumo promedio de combustible, eficiencia eléctrica y costo por kilómetro en tu moneda preferida.</p>
+        </div>
+        <div class="feature-media">
+            <img src="app-store-screenshots/es/03-es-6.9.png" alt="Panel de costos con comparación de vehículos">
+        </div>
+    </div>
 
-            <div class="feature-showcase reverse">
-                <div class="feature-text">
-                    <h2 style="color: var(--sys-yellow);">Guardar Ubicaciones</h2>
-                    <p>Fije sus paradas frecuentes para cargar o repostar, permitiéndole planificar rutas con la máxima eficiencia.</p>
-                </div>
-                <div class="feature-image-wrapper">
-                    <img src="app-store-screenshots/es/05-es-6.9.png" alt="Característica de Ubicaciones">
-                </div>
-            </div>
+    <div class="feature-row reveal">
+        <div class="feature-text">
+            <p class="section-label" style="color: var(--sys-green);">Ubicaciones</p>
+            <h2 class="section-title">Rastrea dónde<br>repostas.</h2>
+            <p class="section-desc">Guarda tus gasolineras y puntos de recarga favoritos en el mapa. Toca cualquier ubicación para ver su historial y obtener indicaciones vía Apple Maps, Google Maps o Waze.</p>
+        </div>
+        <div class="feature-media">
+            <img src="app-store-screenshots/es/04-es-6.9.png" alt="Mapa con ubicaciones de repostaje guardadas">
+        </div>
+    </div>
 
-            <div class="feature-showcase">
-                <div class="feature-text">
-                    <h2 style="color: var(--sys-red);">Control Total</h2>
-                    <p>Hágase cargo de sus datos de seguimiento. Exporte, restablezca y administre la información de su vehículo con total confianza y transparencia.</p>
-                </div>
-                <div class="feature-image-wrapper">
-                    <img src="app-store-screenshots/es/06-es-6.9.png" alt="Característica de Mandos">
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="feature-row reverse reveal">
+        <div class="feature-text">
+            <p class="section-label" style="color: var(--sys-yellow);">Informes Pro</p>
+            <h2 class="section-title">Desbloquea<br>información detallada.</h2>
+            <p class="section-desc">Resúmenes mensuales, tendencias de eficiencia a lo largo del tiempo y gráficos de costo por km te ayudan a entender cómo tus hábitos de conducción impactan tu cartera.</p>
+        </div>
+        <div class="feature-media">
+            <img src="app-store-screenshots/es/05-es-6.9.png" alt="Pantalla de Informes con gráficos de tendencias">
+        </div>
+    </div>
 
-    <footer class="glass">
-        <div class="container footer-content">
-            <div class="footer-info">
-                <p>&copy; 2026 Hybrid Tracker. All rights reserved.</p>
+    <div class="divider"></div>
+
+    <section class="section" style="text-align: center;">
+        <div class="reveal" style="display: flex; flex-direction: column; align-items: center;">
+            <img src="app-store-screenshots/es/06-es-6.9.png" alt="Tu garaje, sincronizado en cualquier lugar" style="max-height: 500px; margin-bottom: 32px; border-radius: 24px;">
+            <div class="chips">
+                <span class="chip">Sincronización iCloud</span>
+                <span class="chip">Múltiples Vehículos</span>
+                <span class="chip">Informes Detallados</span>
+                <span class="chip">Eficiencia Híbrida</span>
+                <span class="chip">Mapa de Ubicaciones</span>
+                <span class="chip">Fotos de Recibos</span>
             </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="cta-banner reveal">
+        <h2>Tu garaje,<br>sincronizado en cualquier lugar.</h2>
+        <p>Disponible para iPhone. Descarga gratuita.</p>
+        <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="hero-cta">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-mx?size=250x83" alt="Consíguelo en el App Store">
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; 2026 Hybrid Tracker. Todos los derechos reservados.</span>
             <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
+                <a href="privacy.html">Política de Privacidad</a>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>
